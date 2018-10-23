@@ -1,13 +1,13 @@
 from graphics import *
 
-win = GraphWin("Circles", 300,500)
+win = GraphWin("Drawing", 300,500)
 
 def drawCircle(x,y,radius,color):
     c = Circle(Point(x,y),radius)
     c.setFill(color)
     c.draw(win)
-def drawRectangle(x,y,color):
-    r = Rectangle(Point(x,y)Point(x1,y1)
+def drawRectangle(x,y,x1,y1,color):
+    r = Rectangle(Point(x,y), Point(x1,y1))
     r.setFill(color)
     r.draw(win)
 
@@ -29,7 +29,7 @@ def main():
             x1 = int(fin.readline())
             y1 = int(fin.readline())
 
-            drawRectangle(x,y,color)
+            drawRectangle(x,y,x1,y1,color)
 
             
 
